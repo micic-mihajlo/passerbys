@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
+import Prompts from "./pages/Prompts";
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -26,6 +27,7 @@ export default function App() {
         />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Menu" component={Menu} />
+        <Stack.Screen name="Prompts" component={Prompts} />
         {/* <Stack.Screen name="MainMenu" component={MainMenu} /> */}
       </Stack.Navigator>
     </NavigationContainer>

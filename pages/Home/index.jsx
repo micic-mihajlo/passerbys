@@ -25,7 +25,7 @@ export default function Home ( { navigation, route } ) {
         
         <StatusBar style="auto" />
         <TouchableOpacity  onPress={() =>
-        navigation.navigate('Login')}>
+        navigation.navigate('Menu')}>
           <Text style={styles.nextText}>Next</Text>
         </TouchableOpacity>
         <View>
