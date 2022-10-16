@@ -1,18 +1,12 @@
 import React, { useState, useRef, useEffect, createRef } from "react";
 import { View, Text, Image, ScrollView, TextInput, StyleSheet, Switch, Animated, Dimensions, Vibration, Alert, KeyboardAvoidingView, Platform, TouchableWithoutFeedback, TouchableOpacity, SafeAreaView } from "react-native";
-import CheckBox from "react-native-check-box";
-import { HtmlText } from "@e-mine/react-native-html-text";
-import { WebView } from "react-native-webview";
-import BottomSheet from "@gorhom/bottom-sheet";
-import Icon from "react-native-vector-icons/Entypo";
+
 import { Svg, Path } from "react-native-svg"
 import { useFonts } from 'expo-font';
-import AppLoading from 'expo-app-loading';
+//import AppLoading from 'expo-app-loading';
 
-export const App = () => {
-	let [fontsLoaded] = useFonts({
-	});
-	if (!fontsLoaded) return <AppLoading />;
+export default function MainMenu ( { navigation } ) {
+	
 
 	return (
 		<View>
@@ -139,5 +133,5 @@ export const App = () => {
 
 
 
-export default App;
+
 

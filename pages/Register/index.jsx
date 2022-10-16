@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import styles from "../Home/styles";
+import styles from "./styles";
 import React, { useState } from "react";
 import {
   Dimensions,
@@ -13,7 +13,7 @@ import {
   ImageBackground
 } from "react-native";
  
-export default function Login( { navigation } ) {
+export default function Register( { navigation } ) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { height, width } = Dimensions.get('window');
@@ -44,14 +44,10 @@ export default function Login( { navigation } ) {
           />
         </View>
 
-        <TouchableOpacity  onPress={() =>
-        navigation.navigate('Register')}>
-          <Text style={styles.forgot_button}>No account? Sign up!</Text>
-        </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}  onPress={() =>
-        navigation.navigate('Home', {name: email})}>
-          <Text style={styles.loginText}>l o g i n</Text>
+        <TouchableOpacity style={styles.button} onPress={() =>
+        navigation.navigate('Login')} >
+          <Text style={styles.loginText}>r e g i s t e r</Text>
         </TouchableOpacity>
       </ImageBackground>
     </View>

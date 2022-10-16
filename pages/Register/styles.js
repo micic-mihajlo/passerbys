@@ -1,6 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 //import font Jost
-//import { useFonts, Jost_600SemiBold } from '@expo-google-fonts/jost';
+import { useFonts } from 'expo-font';
 
 
 const { height, width } = Dimensions.get('window');
@@ -11,28 +11,11 @@ const styles = StyleSheet.create({
     flex: 1,
 
   },
- nextText: {
-    color: '#fff',
-    fontSize: 20,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: -100,
-    marginLeft: 300,
-    marginBottom: 150,
-  },
+ 
   image: {
     marginBottom: 40,
     alignItems: 'center',
   },
-  welcomeText: {
-    fontWeight: 'italic',
-    fontSize: 25,
-    color: '#F28F33',
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-
-
   imagebg:{
     flex: 1,
     resizeMode: "cover",
@@ -55,7 +38,7 @@ const styles = StyleSheet.create({
   },
  
   TextInput: {
-    //fontFamily: "Jost_600SemiBold",
+    //fontFamily: "Jost",
     fontStyle: "normal",
     //fontWeight: 600,
     fontSize: 20,
