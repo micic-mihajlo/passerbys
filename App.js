@@ -19,7 +19,6 @@ import Animated, {
   withSequence,
   withSpring
 } from "react-native-reanimated";
-
 export default function App() {
   const { height, width } = Dimensions.get("window");
   const imagePosition = useSharedValue(1);
@@ -96,7 +95,7 @@ export default function App() {
             <Ellipse cx={width / 2} rx={height} ry={height + 100} />
           </ClipPath>
           <Image
-            href={require("./assets/login-background.png")}
+            href={require("./assets/orange-gradient-bg.png")}
             width={width + 100}
             height={height + 100}
             preserveAspectRatio="xMidYMid slice"
